@@ -2,8 +2,6 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <p className="welcome">Welcome to my portfolio 👋</p>
-
         <h1>
           Hi, I'm <span>Ennan</span>
         </h1>

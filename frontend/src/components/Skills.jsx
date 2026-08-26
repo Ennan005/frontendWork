@@ -2,8 +2,7 @@ function Skills() {
   return (
     <section className="skills photo-page">
       <div className="page-content">
-        <p className="section-title">What I Work With</p>
-        <h1>Skills</h1>
+        <h1>My Skills</h1>
         <p>Tools and technologies I use to turn ideas into useful products.</p>
 
         <div className="skill-list">

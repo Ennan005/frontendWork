@@ -2,7 +2,6 @@ function About() {
   return (
     <section className="about photo-page" id="about">
       <div className="about-content">
-        <p className="section-title">Get To Know Me</p>
 
         <h2>About Me</h2>
 
