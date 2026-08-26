@@ -5,6 +5,8 @@ nav {
   padding: 24px 8%;
   background: rgba(4, 16, 38, 0.44);
   position: relative;
+  flex-wrap: wrap;
+  gap: 16px 28px;
 }
 
 nav h2 {
@@ -20,6 +22,8 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 nav ul a {
@@ -81,6 +85,7 @@ nav ul a:focus-visible::after {
   justify-content: center;
   text-align: center;
   padding: 60px 8%;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -265,10 +270,114 @@ nav ul a:focus-visible::after {
 }
 
 .about-info div {
-  width: 300px;
+  width: min(300px, 100%);
   padding: 25px;
   border: 2px solid white;
   border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 20px 5%;
+  }
+
+  nav ul {
+    gap: 18px;
+  }
+
+  .hero,
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    padding: 72px 6%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .skill-list,
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: center;
+    padding: 18px 5%;
+  }
+
+  nav h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  nav ul a {
+    font-size: 14px;
+  }
+
+  .hero,
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    min-height: calc(100svh - 120px);
+    padding: 56px 5%;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+
+  .hero h2 {
+    font-size: 21px;
+  }
+
+  .welcome,
+  .description,
+  .about p,
+  .contact-content > p,
+  .page-content > p {
+    font-size: 16px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .hero-buttons,
+  .about-info {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons button,
+  .about-info div {
+    width: 100%;
+  }
+
+  .skill-list,
+  .project-list {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+  }
+
+  .skill-list div,
+  .project-list article {
+    padding: 20px;
+  }
 }
 
 .about-info strong {
