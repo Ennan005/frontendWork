@@ -90,6 +90,7 @@ nav ul a:focus-visible::after {
 
 .hero-content {
   max-width: 900px;
+  width: 100%;
 }
 
 .welcome {
@@ -337,12 +338,14 @@ nav ul a:focus-visible::after {
   }
 
   .hero h1 {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 1.1;
+    white-space: nowrap;
   }
 
   .hero h2 {
     font-size: 21px;
+    line-height: 1.3;
   }
 
   .welcome,
@@ -351,6 +354,11 @@ nav ul a:focus-visible::after {
   .contact-content > p,
   .page-content > p {
     font-size: 16px;
+  }
+
+  .description {
+    max-width: 32rem;
+    line-height: 1.6;
   }
 
   .about h2 {
