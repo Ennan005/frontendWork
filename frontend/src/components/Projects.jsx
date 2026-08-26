@@ -2,7 +2,6 @@ function Projects() {
   return (
     <section className="projects photo-page">
       <div className="page-content">
-        <p className="section-title">Selected Work</p>
         <h1>Projects</h1>
         <p>A selection of things I have built while learning and experimenting.</p>
 

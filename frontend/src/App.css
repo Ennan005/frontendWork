@@ -229,6 +229,7 @@ nav ul a:focus-visible::after {
   .skill-list,
   .project-list {
     grid-template-columns: 1fr;
+    border-radius: 2px;
   }
 }
 .about {
